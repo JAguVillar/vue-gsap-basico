@@ -1,0 +1,10 @@
+@font-face {
+    font-family: General;
+    font-style: bold;
+    src: url(/public/fonts/GeneralSans_Complete/GeneralSans-Bold.otf) format("opentype");
+}
+
+* {
+    font-size: 120px;
+    font-family: General;
+}
