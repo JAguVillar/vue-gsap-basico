@@ -23,7 +23,7 @@ yarn lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-###Comandos
+### Comandos
 yarn
 yarn add gsap
 yarn serve
