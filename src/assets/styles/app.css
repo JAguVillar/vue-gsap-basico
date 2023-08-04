@@ -4,7 +4,55 @@
     src: url(/public/fonts/GeneralSans_Complete/GeneralSans-Bold.otf) format("opentype");
 }
 
+/* Plus Jakarta Sans */
+
+@font-face {
+    font-family: Jakatra;
+    font-weight: 200;
+    src: url(/public/fonts/Jakatra/PlusJakartaSans-ExtraLight.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Jakatra;
+    font-weight: 300;
+    src: url(/public/fonts/Jakatra/PlusJakartaSans-Light.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Jakatra;
+    font-weight: 400;
+    src: url(/public/fonts/Jakatra/PlusJakartaSans-Regular.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Jakatra;
+    font-weight: 500;
+    src: url(/public/fonts/Jakatra/PlusJakartaSans-Medium.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Jakatra;
+    font-weight: 600;
+    src: url(/public/fonts/Jakatra/PlusJakartaSans-SemiBold.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Jakatra;
+    font-weight: 700;
+    src: url(/public/fonts/Jakatra/PlusJakartaSans-Bold.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Jakatra;
+    font-weight: 800;
+    src: url(/public/fonts/Jakatra/PlusJakartaSans-ExtraBold.ttf) format("opentype");
+}
+
 * {
-    font-size: 120px;
-    font-family: General;
+
+    font-family: Jakatra;
+}
+
+body {
+    margin: 0px
 }

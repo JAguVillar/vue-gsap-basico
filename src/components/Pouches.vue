@@ -1,66 +1,64 @@
 <template>
-    <Pouches />
     <div class="main">
         <div class="left">
-            <h2 class="titulo">
-                <span class="palabra">Our</span>
+            <h1 class="titulo">
+                <span class="palabra">Pouches</span>
+                <span class="palabra">with</span>
+                <span class="palabra">your</span>
                 <span class="palabra">
-                    <div class="pill2"></div>
-                    products
+                    <div class="pill"></div>
+                    print
                 </span>
-            </h2>
-        </div>
-        <div class="right">
+            </h1>
             <div class="intro">
                 Truly sustainable packaging solutions that will take your
                 products to a whole new level. Get a high-end look for the same
                 price as a blank pouch with a label.
             </div>
         </div>
+        <div class="right">
+            <img src="/images/lprint-2.0.png" alt="" srcset="" />
+        </div>
     </div>
 </template>
 
 <script>
-import Pouches from "./components/Pouches.vue";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-
 export default {
-    name: "App",
-    components: {
-        Pouches,
-    },
+    name: "HelloWorld",
     data() {
         return {};
     },
-    mounted() {
-        gsap.from(".pill2", {
-            scrollTrigger: {
-                trigger: ".pill2",
-                markers: true,
-                width: 0,
-            },
-        });
-    },
+    // mounted() {
+    //     // let tl = gsap.timeline();
+    //     let tl = gsap.timeline();
+    //     const words = document.querySelectorAll(".titulo .palabra");
+
+    //     words.forEach((word) => {
+    //         tl.from(word, {
+    //             opacity: 0,
+    //             y: 20,
+
+    //             stagger: 1, // stagger start times
+    //             ease: "power2.out",
+    //         }).add("end");
+    //     });
+    //     tl.from(".intro", { opacity: 0 }, "end");
+    //     tl.from(".pill", { width: 0 }, "end");
+    // },
     methods: {},
 };
 </script>
 
 <style scoped>
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    /* text-align: center; */
-    /* color: #2c3e50; */
-}
-ç.main {
+.main {
     position: relative;
     display: flex;
     flex-direction: row;
     width: 100vw;
-
+    height: 100vh;
     margin: 0 auto;
 }
 .left {
@@ -73,7 +71,6 @@ export default {
     flex-direction: column;
 }
 .titulo {
-    height: auto;
     font-weight: 400;
     font-size: 80px;
     padding: 0px 20px;
@@ -82,7 +79,7 @@ export default {
 }
 .right {
     width: 50%;
-    background: #ffffff;
+    background: #ffd124;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +95,7 @@ img {
     margin: 0px 10px;
     position: relative;
 }
-.pill2 {
+.pill {
     overflow: hidden;
     background: #ffd124;
     border-radius: 70px;

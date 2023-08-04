@@ -1,5 +1,4 @@
 <template>
-    <Pouches />
     <div class="main">
         <div class="left">
             <h2 class="titulo">
@@ -21,24 +20,20 @@
 </template>
 
 <script>
-import Pouches from "./components/Pouches.vue";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-
 export default {
-    name: "App",
-    components: {
-        Pouches,
-    },
+    name: "HelloWorld",
     data() {
         return {};
     },
     mounted() {
-        gsap.from(".pill2", {
+        gsap.from(".intro", {
             scrollTrigger: {
                 trigger: ".pill2",
                 markers: true,
+                start: "top top",
                 width: 0,
             },
         });
@@ -48,14 +43,7 @@ export default {
 </script>
 
 <style scoped>
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    /* text-align: center; */
-    /* color: #2c3e50; */
-}
-ç.main {
+.main {
     position: relative;
     display: flex;
     flex-direction: row;
